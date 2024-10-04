@@ -2173,6 +2173,13 @@ static const uint8_t HD371001C40_init_operations[] = {
     WRITE_C8_D16, 0xE5, 0x00, 0x00
 };
 
+// HD399001C40 3.99" bar display
+//    1 /* hync_polarity */, 20 /* hsync_front_porch */, 20 /* hsync_pulse_width */, 20 /* hsync_back_porch */,
+//    1 /* vsync_polarity */, 12 /* vsync_front_porch */, 3 /* vsync_pulse_width */, 20 /* vsync_back_porch */,
+//    1 /* pclk_active_neg */, GFX_NOT_DEFINED /* prefer_speed */, false /* useBigEndian */, 0 /* de_idle_high */,
+//    0 /* pclk_idle_high */, 0 /* col_offset */, 0 /* row_offset1 */, 8 /* col_offset2 */ );
+// static const uint8_t HD399001C40_init_operations[] = {
+
 // HD458002C40 4.58" bar display
 //    1 /* hync_polarity */, 10 /* hsync_front_porch */, 10 /* hsync_pulse_width */, 50 /* hsync_back_porch */,
 //    1 /* vsync_polarity */, 15 /* vsync_front_porch */, 2 /* vsync_pulse_width */, 17 /* vsync_back_porch */,
